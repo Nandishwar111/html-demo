@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: aquamarine;
+}
+header{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+}
+header h1{
+    font-size: 46px;
+    text-decoration-color:black;
+    color: black;
+    
+}
+header > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+main{
+    background-color: rgb(28, 173, 178);
+    margin: 0px 30px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+nav ul li a{
+    width: auto;
+    height: 50px;
+    background-color: rgb(224, 141, 6);
+    align-content: center;
+    text-decoration: none;
+    transition: scale 1s;
+    
+}
+nav ul li a:hover{
+     /* transform:matrix(.1); */
+
+     scale: 1.2;
+    /* border: 10px; */
+
+}
+#outer{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 200px; */
+    padding-left: 200px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+
+}
+
+#outer h3{
+color: rgb(235, 8, 8);
+}
+
+#outer img{
+    /* padding-left: 100px; */
+    margin-left: 100px;
+    width:555px;
+    height: 300px;
+    border-radius: 20px;
+}
+#inner{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+#inner div{
+    flex: 1;
+}
+
+#inner div li{
+    padding: 3px;
+    color: rgb(12, 129, 225);
+}
+
+li::marker{
+    content: "→";
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 0px 20px 0px;
+}
+
+/*Responsiveness - For devices screen width less than 768px
+                  - Mobile, IPAd */
+                  @media (max-width: 768px) {
+                    .container {
+                        flex-direction: column;
+                    }
+                
+                    nav ul {
+                        flex-direction: column;
+                    }
+                
+                    nav ul li {
+                        margin: 0.5rem 0;
+                    }
+                }
